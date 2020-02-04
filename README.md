@@ -16,9 +16,10 @@ Items changed in the font files includes:
 * `name` table (Platform ID=3, Name ID = 1&2)
 * `OS/2.fsSelection` field
 * `macStyle` field
+
 These are changed to fit the family and link the Regular, Italic, Bold and Bold Italic variant together in Microsoft Office, making the press of **`B`** and *`i`* buttons in Microsoft Office working correctly.
 
-SF Mono Italic is a special case as the original font has Name ID `Regular Italic`. The changes are reflected to other font name.
+SF Mono Italic is a special case as the original font has Name ID 2 `Regular Italic`. The changes are reflected to other font name （`name` table - Name ID 1, 2, 3, 4, 6, 17 for both Platform ID 1 and 3).
 
 ---
 
