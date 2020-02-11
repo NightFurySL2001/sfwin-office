@@ -11,8 +11,9 @@ __San Francisco Mono__ for Terminal and Code Editor
 This font is edited from [SFWin](https://github.com/blaisck/sfwin) by [blaisck](https://github.com/blaisck).
 
 The fonts are edited with `ttx` from [`afdko`](https://github.com/adobe-type-tools/afdko).
+TTF files are generated from OTF files with `otf2ttf` from [`fonttools`](https://github.com/fonttools/fonttools).
 
-Items changed in the font files includes:
+Items changed in the OpenType font files includes:
 * `name` table (Platform ID=3, Name ID = 1&2)
 * `OS/2.fsSelection` field
 * `macStyle` field
