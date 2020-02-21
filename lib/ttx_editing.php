@@ -15,7 +15,7 @@ foreach($file_list as $file){
 	$nameID1_ind=$nameID2_ind=$fsSel_ind=$macStyle_ind=0;
 	
 	//looping through lines
-	for($i=0;$i<count($data);$i++){
+	for($i=0; $i<count($data); $i++){
 		if(trim($data[$i]) == $string_nameID1){
 			$nameID1=trim($data[$i+1]);
 			$nameID1_ind=$i+1;
@@ -41,6 +41,11 @@ foreach($file_list as $file){
 		case "Italic":
 			$fsSel = '<fsSelection value="00000000 00000001"/>';
 			$macStyle = '<macStyle value="00000000 00000010"/>';
+			break;
+		case "Regular Italic":
+			$fsSel = '<fsSelection value="00000000 00000001"/>';
+			$macStyle = '<macStyle value="00000000 00000010"/>';
+			$nameID2 = "Italic";
 			break;
 		case "Bold":
 			$fsSel = '<fsSelection value="00000000 00100000"/>';
@@ -76,6 +81,6 @@ foreach($file_list as $file){
 	//output name ID for checking
 	echo($nameID1."<br>\r\n".$nameID2."<br>\r\n".$fsSel."<br>\r\n".$macStyle."<br>\r\n");
 	//write output to new file in current directory
-	file_put_contents((substr($file,5,-4).".ttx"), $output);
+	file_put_contents((substr($file,strlen($dir),-4).".ttx"), $output);
 }
 ?>
