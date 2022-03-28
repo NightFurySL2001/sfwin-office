@@ -24,6 +24,12 @@ SF Mono Italic is a special case as the original font has Name ID 2 `Regular Ita
 
 ---
 
+Be aware that this font is only for **personal use only** for cross-platform compatibility. I do not provide any promises or guarantee for the font generated and any legal confirmation or endorsement for the use of font on platforms other than Mac OS.
+
+## DO NOT USE THIS FONT IN ANY COMMERCIAL SETTINGS ON NON-MAC OS SYSTEM. ALL RISK IS ON YOUR OWN.
+
+---
+
 Tested on _Windows 10 Pro 64-bit_. 
  
 Open an issue if you have problem. 
